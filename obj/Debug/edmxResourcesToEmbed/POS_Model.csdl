@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="POSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="POSEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetOrderDetails" ReturnType="Collection(POSModel.GetOrderDetails_Result)">
+      <Parameter Name="ID_Order" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetOrderDetails_Result">
+    <Property Type="String" Name="ID_Product" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="العدد" Nullable="false" />
+    <Property Type="Int32" Name="الكمية" Nullable="true" />
+    <Property Type="Decimal" Name="سعر_المفرد" Nullable="false" Precision="9" Scale="3" />
+    <Property Type="Decimal" Name="المجموع" Nullable="false" Precision="9" Scale="3" />
+    <Property Type="Int32" Name="رقم_الفاتورة" Nullable="false" />
+    <Property Type="Int32" Name="ID_COSTUMER" Nullable="false" />
+    <Property Type="DateTime" Name="تاريخ_الفاتورة" Nullable="false" Precision="23" />
+    <Property Type="String" Name="رقم_الهاتف" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="العنوان" Nullable="true" />
+    <Property Type="Decimal" Name="الرصيد_المستحق" Nullable="true" Precision="9" Scale="0" />
+    <Property Type="String" Name="اسم_المنتج" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="الملاحظات" Nullable="true" />
+    <Property Type="String" Name="اسم_السائق" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="المجموع_الكلي" Nullable="false" Precision="9" Scale="3" />
+    <Property Type="Decimal" Name="المبلغ_المستلم" Nullable="true" Precision="9" Scale="3" />
+    <Property Type="Decimal" Name="المبلغ_المتبقي" Nullable="true" Precision="9" Scale="3" />
+    <Property Type="Decimal" Name="التخفيض" Nullable="true" Precision="9" Scale="3" />
+    <Property Type="String" Name="اسم_الزبون" Nullable="false" MaxLength="50" />
+  </ComplexType>
+</Schema>

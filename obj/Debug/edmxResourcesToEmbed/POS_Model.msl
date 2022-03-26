@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="POSModelStoreContainer" CdmEntityContainer="POSEntities">
+    <FunctionImportMapping FunctionImportName="GetOrderDetails" FunctionName="POSModel.Store.GetOrderDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="POSModel.GetOrderDetails_Result">
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="العدد" ColumnName="العدد" />
+          <ScalarProperty Name="الكمية" ColumnName="الكمية" />
+          <ScalarProperty Name="سعر_المفرد" ColumnName="سعر المفرد" />
+          <ScalarProperty Name="المجموع" ColumnName="المجموع" />
+          <ScalarProperty Name="رقم_الفاتورة" ColumnName="رقم الفاتورة" />
+          <ScalarProperty Name="ID_COSTUMER" ColumnName="ID_COSTUMER" />
+          <ScalarProperty Name="تاريخ_الفاتورة" ColumnName="تاريخ الفاتورة" />
+          <ScalarProperty Name="رقم_الهاتف" ColumnName="رقم الهاتف" />
+          <ScalarProperty Name="العنوان" ColumnName="العنوان" />
+          <ScalarProperty Name="الرصيد_المستحق" ColumnName="الرصيد المستحق" />
+          <ScalarProperty Name="اسم_المنتج" ColumnName="اسم المنتج" />
+          <ScalarProperty Name="الملاحظات" ColumnName="الملاحظات" />
+          <ScalarProperty Name="اسم_السائق" ColumnName="اسم السائق" />
+          <ScalarProperty Name="المجموع_الكلي" ColumnName="المجموع الكلي" />
+          <ScalarProperty Name="المبلغ_المستلم" ColumnName="المبلغ المستلم" />
+          <ScalarProperty Name="المبلغ_المتبقي" ColumnName="المبلغ المتبقي" />
+          <ScalarProperty Name="التخفيض" ColumnName="التخفيض" />
+          <ScalarProperty Name="اسم_الزبون" ColumnName="اسم الزبون" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
