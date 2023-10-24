@@ -36,7 +36,7 @@ To get started with this Retail POS system, follow these steps:
 2. **Clone the Repository:** Clone this repository to your local machine using Git:
 
    ```bash
-   git clone https://github.com/your-username/retail-pos-csharp-net.git
+   git clone https://github.com/zaidzuhaira/retail-pos-csharp-net.git
    ```
 
 3. **Configuration:** Configure the POS system to match your specific retail business, including setting up products, payment methods, and user roles.
